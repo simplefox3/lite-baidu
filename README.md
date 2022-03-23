@@ -39,3 +39,7 @@
 使用脚本后页面：
 
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/oranhext/static-content-hosting@main/images/projects/lite-baidu/baike-after.png" alt="Baike After" width="750" /></p>
+
+## 说明
+
+由于百度系网站的变动，部分广告屏蔽也许会失效，可以通过提 [Issues](https://github.com/oranhext/lite-baidu/issues) 或者通过 [Greasy Fork 讨论区](https://greasyfork.org/zh-CN/scripts/441915/feedback) 向我反馈，我收到后会及时更新。
