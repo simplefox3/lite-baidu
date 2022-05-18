@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         简百度【百度系网站美化去广告】
 // @namespace    lite-baidu
-// @version      1.0.0
+// @version      1.0.1
 // @description  百度系网站去除广告和冗余元素，页面精简美化，强迫症患者必备。
 // @author       oranhext
 // @homepage     https://github.com/oranhext/lite-baidu
@@ -40,7 +40,7 @@
         tieba_lite();
     }
 
-    if (location.href.indexOf("pan.baidu.com") > -1) {
+    if (location.href.indexOf("yun.baidu.com") || location.href.indexOf("pan.baidu.com") > -1) {
         pan_lite();
     }
 
