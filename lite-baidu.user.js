@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         简百度【百度系网站美化去广告】
 // @namespace    lite-baidu
-// @version      1.0.1
+// @version      1.0.2
 // @description  百度系网站去除广告和冗余元素，页面精简美化，强迫症患者必备。
 // @author       oranhext
 // @homepage     https://github.com/oranhext/lite-baidu
 // @match        *://*.baidu.com/*
-// @icon         https://cdn.jsdelivr.net/gh/oranhext/static-content-hosting@main/images/projects/lite-baidu/lite-baidu-logo.png
+// @icon         https://static-content-hosting.vercel.app/images/projects/lite-baidu/lite-baidu-logo.png
 // @license      Apache-2.0
 // @grant        unsafeWindow
 // ==/UserScript==
@@ -94,6 +94,8 @@
         baike_css1[0].setAttribute("style", "display:flex;justify-content:center;align-items:center;");
         var baike_css2 = document.getElementsByClassName("content-wrapper");
         baike_css2[0].setAttribute("style", "margin:20px 0 30px 0;");
+        var baike_css3 = document.getElementsByClassName("before-content");
+        baike_css3[0].setAttribute("style", "width:1139px;margin:0 auto;");
     }
 
     // 百度知道
@@ -203,14 +205,15 @@
 
     // 百度网盘
     function pan_lite() {
-        var node_id = ["ft", "web-header-text-s-2", "footer"];
+        var node_id = ["ft", "web-header-text-s-2", "footer", "web-header-text-s-28"];
         var node_class = ["app-user-vip-center", "module-device-box", "module-device-mask", "wpGuideDialog",
             "module-canvas", "btn-img-tips", "phone-banner", "video-title-right-open-mobile",
             "privilege-box", "gOIbzPb", "app-download", "newIcon", "wp-side-options", "ssbceg62",
             "module-operation-content", "find-light-icon", "u-dialog__wrapper nd-dialog-common-header nd-dialog-workspace--bg",
             "v-modal", "web-header-ad-item wp-disk-header__right-item", "wp-disk-header__right-item company-cert",
             "wp-header-user__tooltip nd-header-user__tooltip-display u-tooltip", "wp-aside-nav-bubble wp-aside-nav__main-item",
-            "wp-header-cert__ee-cert-tilte", "yike-entrance", "nd-operate-guidance", "wp-disk-header__vip-btn-wrapper"];
+            "wp-header-cert__ee-cert-tilte", "yike-entrance", "nd-operate-guidance", "wp-disk-header__vip-btn-wrapper",
+            "wp-s-header-cert__tooltip", "wp-s-aside-nav-bubble"];
 
         setInterval(function () {
             for (var i = node_id.length - 1; i >= 0; i--) {
